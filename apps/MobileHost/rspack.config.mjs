@@ -75,9 +75,9 @@ export default (env) => {
      */
     devtool: false,
     context,
-     // empty entry when building as federated miniapp
-    // TODO remove this workaround when fixed in Re.Pack
-    entry: STANDALONE ? entry : {},
+     // If this is a miniapp, Repack runtime only compile the MF part
+    // If this is the host only pass in the entry point
+    entry: entry,
     resolve: {
       /**
        * `getResolveOptions` returns additional resolution configuration for React Native.

@@ -8,6 +8,7 @@
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 import {
+  Image,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -28,6 +29,8 @@ import {
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
+
+import {NavigationContainer} from '@react-navigation/native';
 
 function Section({children, title}: SectionProps): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -72,25 +75,23 @@ function App(): React.JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
+        <NavigationContainer>
+          <View
+            style={{
+              backgroundColor: isDarkMode ? Colors.black : Colors.white,
+              ...styles.imageContainer,
+            }}>
+            <Text style={styles.sectionDescription}>
+              This is some element from remote
+            </Text>
+            <Image
+              style={styles.image}
+              source={{
+                uri: 'https://reactnative.dev/img/tiny_logo.png',
+              }}
+            />
+          </View>
+        </NavigationContainer>
       </ScrollView>
     </SafeAreaView>
   );
@@ -109,6 +110,17 @@ const styles = StyleSheet.create({
     marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
+  },
+  imageContainer: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 10,
+    flexDirection: 'column',
+    gap: 10,
+  },
+  image: {
+    width: 80,
+    height: 80,
   },
   highlight: {
     fontWeight: '700',

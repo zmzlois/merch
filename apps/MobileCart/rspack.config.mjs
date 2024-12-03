@@ -3,7 +3,7 @@ import path from 'node:path';
 import rspack from '@rspack/core';
 import * as Repack from '@callstack/repack';
 import TerserPlugin from 'terser-webpack-plugin';
-import { sdkCapabilities } from '@zephyr-merch/mobile-sdk';
+import { getSharedDependencies } from '@zephyr-merch/mobile-sdk';
 import Dotenv from "dotenv-webpack"
 
 const dirname = Repack.getDirname(import.meta.url);
@@ -76,7 +76,7 @@ export default (env) => {
     context,
      // empty entry when building as federated miniapp
     // TODO remove this workaround when fixed in Re.Pack
-    entry: STANDALONE ? entry : {},
+    entry: entry,
     resolve: {
       /**
        * `getResolveOptions` returns additional resolution configuration for React Native.
@@ -149,21 +149,21 @@ export default (env) => {
         Repack.REACT_NATIVE_LOADING_RULES,
         Repack.NODE_MODULES_LOADING_RULES,
         Repack.FLOW_TYPED_MODULES_LOADING_RULES,
-        {
-          test: /\.[cm]?[jt]sx?$/,
-          include: [
-            /node_modules(.*[/\\])+react-native/,
-            /node_modules(.*[/\\])+@react-native/,
-            /node_modules(.*[/\\])+@react-navigation/,
-            /node_modules(.*[/\\])+@react-native-community/,
-            /node_modules(.*[/\\])+expo/,
-            /node_modules(.*[/\\])+pretty-format/,
-            /node_modules(.*[/\\])+metro/,
-            /node_modules(.*[/\\])+abort-controller/,
-            /node_modules(.*[/\\])+@callstack[/\\]repack/,
-          ],
-          use: 'babel-loader',
-        },
+        // {
+        //   test: /\.[cm]?[jt]sx?$/,
+        //   include: [
+        //     /node_modules(.*[/\\])+react-native/,
+        //     /node_modules(.*[/\\])+@react-native/,
+        //     /node_modules(.*[/\\])+@react-navigation/,
+        //     /node_modules(.*[/\\])+@react-native-community/,
+        //     /node_modules(.*[/\\])+expo/,
+        //     /node_modules(.*[/\\])+pretty-format/,
+        //     /node_modules(.*[/\\])+metro/,
+        //     /node_modules(.*[/\\])+abort-controller/,
+        //     /node_modules(.*[/\\])+@callstack[/\\]repack/,
+        //   ],
+        //   use: 'babel-loader',
+        // },
 
          /** Here you can adjust loader that will process your files. */
          {
@@ -214,6 +214,13 @@ export default (env) => {
             },
           },
         },
+         /** Additional rule to enable HMR for local workspace packages */
+         {
+          test: /\.[jt]sx?$/,
+          include: [/zephyr-merch/],
+          use: 'builtin:react-refresh-loader',
+        },
+        /**
         /**
          * This loader handles all static assets (images, video, audio and others), so that you can
          * use (reference) them inside your application.

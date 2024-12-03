@@ -47,18 +47,6 @@
         "name": "react-native-localize",
         "version": "3.3.0"
     },
-    "sg-reactnative-core": {
-        "name": "sg-reactnative-core",
-        "version": "0.0.1"
-    },
-    "@api/bff-sdk": {
-        "name": "@api/bff-sdk",
-        "version": "0.0.1"
-    },
-    "@api/typings": {
-        "name": "@api/typings",
-        "version": "0.0.1"
-    },
     "lottie-react-native": {
         "name": "lottie-react-native",
         "version": "7.1.0"
