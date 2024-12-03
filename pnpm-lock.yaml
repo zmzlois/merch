@@ -117,6 +117,9 @@ importers:
       jsdom:
         specifier: ~22.1.0
         version: 22.1.0
+      mprocs:
+        specifier: ^0.7.1
+        version: 0.7.1
       nx:
         specifier: 20.1.4
         version: 20.1.4(@swc-node/register@1.9.2(@swc/core@1.5.29(@swc/helpers@0.5.13))(@swc/types@0.1.17)(typescript@5.5.4))(@swc/core@1.5.29(@swc/helpers@0.5.13))
@@ -6564,6 +6567,11 @@ packages:
   mlly@1.7.3:
     resolution: {integrity: sha512-xUsx5n/mN0uQf4V548PKQ+YShA4/IW0KI1dZhrNrPCLG+xizETbHTkOa1f8/xut9JRPp8kQuMnz0oqwkTiLo/A==}
 
+  mprocs@0.7.1:
+    resolution: {integrity: sha512-v22SIwcOphZm6XLdNfeHf4ZDYHqV1hghyfqNLwmZ604lEXlEkiuazYBWUz3xEB2GdABEAKfCZ8qiOVIoREM6CQ==}
+    engines: {node: '>=0.10.0'}
+    hasBin: true
+
   mrmime@1.0.1:
     resolution: {integrity: sha512-hzzEagAgDyoU1Q6yg5uI+AorQgdvMCur3FcKf7NhMKWsaYg+RnbTyHRa/9IlLF9rf455MOCtcqqrQQ83pPP7Uw==}
     engines: {node: '>=10'}
@@ -11768,7 +11776,9 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - '@babel/preset-env'
+      - bufferutil
       - supports-color
+      - utf-8-validate
 
   '@react-native/normalize-colors@0.76.1': {}
 
@@ -16690,6 +16700,8 @@ snapshots:
       pathe: 1.1.2
       pkg-types: 1.2.1
       ufo: 1.5.4
+
+  mprocs@0.7.1: {}
 
   mrmime@1.0.1: {}
 

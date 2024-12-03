@@ -1,0 +1,7 @@
+procs:
+  Host:
+    shell: pnpm start:mobile-host
+    stop: SIGKILL
+  Cart:
+    shell: pnpm start:mobile-cart
+    stop: SIGKILL
