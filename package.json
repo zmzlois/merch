@@ -2,13 +2,26 @@
   "name": "@zephyr-merch/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start:mobile-host": "pnpm --filter MobileHost start",
+    "start:mobile-cart": "pnpm --filter MobileCart start",
+    "run:mobile-host:ios": "pnpm --filter MobileHost ios",
+    "run:mobile-host:android": "pnpm --filter MobileHost android",
+    "run:mobile-cart:ios": "pnpm --filter MobileCart ios",
+    "run:mobile-cart:android": "pnpm --filter MobileCart android",
+    "pods": "pnpm -r pods",
+    "pods:update": "pnpm -r pods:update",
+    "adbreverse": "nx run-many -t adbreverse",
+    "align-deps": "pnpm -r align-deps",
+    "check-deps": "pnpm -r check-deps"
+  },
   "private": true,
   "devDependencies": {
     "@eslint/js": "^9.8.0",
     "@nx/eslint": "20.1.4",
     "@nx/eslint-plugin": "20.1.4",
     "@nx/js": "20.1.4",
+    "@nx/plugin": "20.1.4",
     "@nx/react": "20.1.4",
     "@nx/rspack": "20.1.4",
     "@nx/vite": "20.1.4",
@@ -43,9 +56,11 @@
     "typescript": "~5.5.2",
     "typescript-eslint": "^8.0.0",
     "vite": "^5.0.0",
-    "vitest": "^1.3.1"
+    "vitest": "^1.3.1",
+    "@rnx-kit/align-deps": "^2.5.1"
   },
   "dependencies": {
+    "@callstack/repack": "5.0.0-rc.2",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-router-dom": "6.11.2"

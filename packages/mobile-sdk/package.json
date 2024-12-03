@@ -1,0 +1,19 @@
+{
+  "name": "@zephyr-merch/mobile-sdk",
+  "version": "0.0.1",
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "main": "./src/index.js",
+  "nx": {
+    "sourceRoot": "packages/mobile-sdk",
+    "name": "mobile-sdk"
+  },
+  "files": [
+    "android",
+    "ios",
+    "lib",
+    "index.js",
+    "preset.js"
+  ]
+}
