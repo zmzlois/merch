@@ -1,6 +1,7 @@
 import { Bool, OpenAPIRoute, Str } from "chanfana";
 import { z } from "zod";
-import { Task } from "../types";
+import { Product } from "../types";
+import { ServerResponse } from "http";
 
 export class TaskFetch extends OpenAPIRoute {
 	schema = {
@@ -20,7 +21,7 @@ export class TaskFetch extends OpenAPIRoute {
 							series: z.object({
 								success: Bool(),
 								result: z.object({
-									task: Task,
+									task: Product,
 								}),
 							}),
 						}),
@@ -52,20 +53,7 @@ export class TaskFetch extends OpenAPIRoute {
 
 		// Implement your own object fetch here
 
-		const exists = true;
 
-		// @ts-ignore: check if the object exists
-		if (exists === false) {
-			return Response.json(
-				{
-					success: false,
-					error: "Object not found",
-				},
-				{
-					status: 404,
-				},
-			);
-		}
 
 		return {
 			success: true,

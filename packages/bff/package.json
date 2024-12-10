@@ -1,8 +1,9 @@
 {
-	"name": "cloudflare-workers-openapi",
+	"name": "zephyr-merch-bff",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
+		"build": "wrangler deploy --dry-run --outdir dist",
 		"deploy": "wrangler deploy",
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
@@ -10,6 +11,7 @@
 	},
 	"dependencies": {
 		"chanfana": "^2.0.2",
+		"drizzle-orm": "^0.37.0",
 		"hono": "^4.4.7",
 		"zod": "^3.23.8"
 	},
@@ -17,6 +19,7 @@
 		"@cloudflare/workers-types": "^4.20241205.0",
 		"@types/node": "20.8.3",
 		"@types/service-worker-mock": "^2.0.1",
+		"drizzle-kit": "^0.30.0",
 		"wrangler": "^3.91.0"
 	}
 }

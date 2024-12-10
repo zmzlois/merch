@@ -1,6 +1,6 @@
 import { Bool, OpenAPIRoute } from "chanfana";
 import { z } from "zod";
-import { Task } from "../types";
+import { Product } from "../types";
 
 export class TaskCreate extends OpenAPIRoute {
 	schema = {
@@ -10,7 +10,7 @@ export class TaskCreate extends OpenAPIRoute {
 			body: {
 				content: {
 					"application/json": {
-						schema: Task,
+						schema: Product,
 					},
 				},
 			},
@@ -24,7 +24,7 @@ export class TaskCreate extends OpenAPIRoute {
 							series: z.object({
 								success: Bool(),
 								result: z.object({
-									task: Task,
+									task: Product,
 								}),
 							}),
 						}),
@@ -45,14 +45,7 @@ export class TaskCreate extends OpenAPIRoute {
 
 		// return the new task
 		return {
-			success: true,
-			task: {
-				name: taskToCreate.name,
-				slug: taskToCreate.slug,
-				description: taskToCreate.description,
-				completed: taskToCreate.completed,
-				due_date: taskToCreate.due_date,
-			},
+
 		};
 	}
 }

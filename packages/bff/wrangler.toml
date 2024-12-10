@@ -1,13 +1,18 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "bff"
+name = "zephyr-merch-bff"
 main = "src/index.ts"
 compatibility_date = "2024-12-05"
+node_compat = true
 
 # Workers Logs
 # Docs: https://developers.cloudflare.com/workers/observability/logs/workers-logs/
 # Configuration: https://developers.cloudflare.com/workers/observability/logs/workers-logs/#enable-workers-logs
 [observability]
 enabled = true
+
+
+# account_id = "c11c76ccaaf7ffcf7aa539576056a8ce"
+
 
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Worker, running it closer to your back-end infrastructure
@@ -21,8 +26,11 @@ enabled = true
 # - https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
 # Note: Use secrets to store sensitive data.
 # - https://developers.cloudflare.com/workers/configuration/secrets/
-# [vars]
-# MY_VARIABLE = "production_value"
+[vars]
+BASE_URL = ""
+ACCESS_TOKEN = ""
+SHOP_ID = ""
+
 
 # Bind the Workers AI model catalog. Run machine learning models, powered by serverless GPUs, on Cloudflare’s global network
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#workers-ai
@@ -41,10 +49,28 @@ enabled = true
 
 # Bind a D1 database. D1 is Cloudflare’s native serverless SQL database.
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#d1-databases
+[[d1_databases]]
+binding = "DB"
+database_name = "zephyr-merch-db"
+database_id = "d8b048ac-a2ee-4b2e-947e-52cc0f0cd9aa"
+migrations_dir = "src/drizzle/migrations"
+
+# [env.local]
 # [[d1_databases]]
-# binding = "MY_DB"
-# database_name = "my-database"
-# database_id = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+# binding = "D1"
+# database_name = "mysite-local"
+# database_id = "n/a"
+# migrations_dir = "src/drizzle/migrations"
+
+# [env.preview]
+# d1_databases = [
+#     { binding = "D1", database_name = "ze-merch-preview", database_id = "<id>", migrations_dir = "src/drizzle/migrations" },
+# ]
+
+# [env.production]
+# d1_databases = [
+#     { binding = "D1", database_name = "ze-merch-prod", database_id = "d8b048ac-a2ee-4b2e-947e-52cc0f0cd9aa", migrations_dir = "src/drizzle/migrations" },
+# ]
 
 # Bind a dispatch namespace. Use Workers for Platforms to deploy serverless functions programmatically on behalf of your customers.
 # Docs: https://developers.cloudflare.com/workers/wrangler/configuration/#dispatch-namespace-bindings-workers-for-platforms
