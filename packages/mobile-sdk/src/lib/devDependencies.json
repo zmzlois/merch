@@ -118,10 +118,5 @@
         "name": "dotenv-webpack",
         "version": "^8.1.0",
         "devOnly": true
-    },
-    "zephyr-repack-plugin": {
-        "name": "zephyr-repack-plugin",
-        "version": "0.0.0-canary-20241121202227",
-        "devOnly": true
     }
 }
