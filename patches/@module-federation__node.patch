@@ -1,0 +1,13 @@
+diff --git a/dist/src/utils/hot-reload.js b/dist/src/utils/hot-reload.js
+index c36ff9270af7d8b50befdfac984d662a7cabb024..2dc1a9d2d23de1689e6b84a17763c61e11ff5463 100644
+--- a/dist/src/utils/hot-reload.js
++++ b/dist/src/utils/hot-reload.js
+@@ -147,7 +147,7 @@ const performReload = async (shouldReload) => {
+         }
+     });
+     //@ts-ignore
+-    __webpack_require__?.federation?.instance?.moduleCache?.clear();
++    require?.federation?.instance?.moduleCache?.clear();
+     helpers_1.default.global.resetFederationGlobalInfo();
+     globalThis.moduleGraphDirty = false;
+     globalThis.mfHashMap = {};

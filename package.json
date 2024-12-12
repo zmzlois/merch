@@ -60,11 +60,27 @@
     "typescript-eslint": "^8.0.0",
     "vite": "^5.0.0",
     "vitest": "^1.3.1",
-    "zephyr-repack-plugin": "0.0.0-canary-20241121202227"
+    "@react-native-community/cli": "latest"
   },
   "dependencies": {
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-router-dom": "6.11.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "zephyr-repack-plugin": "0.0.0-canary-20241122175815",
+      "zephyr-edge-contract": "0.0.0-canary-20241122175815",
+      "zephyr-agent": "0.0.0-canary-20241122175815",
+      "zephyr-xpack-internal": "0.0.0-canary-20241122175815",
+      "@react-native/dev-middleware": "0.76.1"
+    },
+    "patchedDependencies": {
+      "@react-native/community-cli-plugin": "patches/@react-native_community-cli-plugin.patch",
+      "react-native-paper": "patches/react-native-paper.patch",
+      "@callstack/repack": "patches/@callstack__repack.patch",
+      "react-native": "patches/react-native.patch",
+      "@module-federation/node": "patches/@module-federation__node.patch"
+    }
   }
 }

@@ -5,6 +5,7 @@ import * as Repack from '@callstack/repack';
 import TerserPlugin from 'terser-webpack-plugin';
 import * as mobileSdk from '@zephyr-merch/mobile-sdk';
 import Dotenv from "dotenv-webpack"
+import { withZephyr } from 'zephyr-repack-plugin'
 
 const dirname = Repack.getDirname(import.meta.url);
 const { resolve } = createRequire(import.meta.url);
@@ -194,7 +195,7 @@ export default (env) => {
           },
         },
           /** Run React Native codegen, required for utilizing new architecture */
-          Repack.REACT_NATIVE_CODEGEN_RULES,
+           Repack.REACT_NATIVE_CODEGEN_RULES,
         /**
          * Here you can adjust loader that will process your files.
          *
@@ -275,6 +276,14 @@ export default (env) => {
        new rspack.IgnorePlugin({
         resourceRegExp: /^@react-native-masked-view/,
       }),
+      new Repack.plugins.ModuleFederationPluginV2({
+        name: 'MobileHost', 
+        filename: 'MobileHost.container.js.bundle', 
+        remotes: {
+          MobileCart: `MobileCart@http://localhost:8081/${platform}/MobileCart.container.js.bundle`,
+        },
+        
+      })
     ],
   };
 

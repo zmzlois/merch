@@ -1,7 +1,7 @@
 import React from 'react';
 import {ActivityIndicator, StyleSheet, View} from 'react-native';
 
-const CartNavigator = React.lazy(() => import('MiniApp/CartNavigator'));
+const CartNavigator = React.lazy(() => import('MobileCart/CartNavigator'));
 
 const FallbackComponent = () => (
   <View style={styles.container}>

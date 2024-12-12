@@ -70,7 +70,7 @@
     "terser-webpack-plugin": "^5.3.10",
     "typescript": "^5.6.3",
     "webpack": "^5.95.0",
-    "zephyr-repack-plugin": "0.0.0-canary-20241121202227"
+    "zephyr-repack-plugin": "0.0.0-canary-20241122175815"
   },
   "engines": {
     "node": ">=18"

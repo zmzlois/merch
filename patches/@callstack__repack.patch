@@ -1,0 +1,13 @@
+diff --git a/dist/plugins/ModuleFederationPluginV2.js b/dist/plugins/ModuleFederationPluginV2.js
+index 40f23ca6f862931131f233011c0e0b5cbf2a94b0..6c14f853f4a7e84f6fdea297cc312f7f363238f8 100644
+--- a/dist/plugins/ModuleFederationPluginV2.js
++++ b/dist/plugins/ModuleFederationPluginV2.js
+@@ -215,7 +215,7 @@ class ModuleFederationPluginV2 {
+     const runtimePluginsConfig = this.adaptRuntimePlugins(compiler.context, this.config.runtimePlugins);
+     const config = {
+       ...this.config,
+-      library: libraryConfig,
++      // library: libraryConfig,
+       shared: sharedConfig,
+       shareStrategy: shareStrategyConfig,
+       runtimePlugins: runtimePluginsConfig
