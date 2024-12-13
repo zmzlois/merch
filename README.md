@@ -1,6 +1,45 @@
 # ZephyrMerch
 
-## Avoid typescript setup error
+## To use this repo
+
+1. Run `pnpm install` to install the dependencies
+
+```
+pnpm install
+```
+
+2. Build cart
+
+```
+# Build ios
+ZC=1 pnpm --filter MobileCart run bundle:ios # build with zephyr
+
+```
+
+3. Build host
+
+```
+ZC=1 pnpm --filter MobileHost run bundle:ios # build with zephyr
+```
+
+4. Start simulator
+
+```
+pnpm --filter MobileHost run ios
+```
+
+5. Run host dev server
+
+```
+ZC=1 pnpm --filter MobileHost run start --platform ios
+```
+
+## Todo
+
+1. Resolve correctbundle version following rules
+2. Re.pack Android error
+
+##### Avoid typescript setup error
 
 Pass in environment variable to bypass the error:
 
