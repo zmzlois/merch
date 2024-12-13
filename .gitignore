@@ -43,8 +43,9 @@ Thumbs.db
 
 vite.config.*.timestamp*
 
-*/.env
+# Nested environment files
+**/.env
 .dev.vars
-*/.dev.vars
+**/.dev.vars
 .env.local
-*/.env.local
+**/.env.local
