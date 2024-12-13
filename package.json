@@ -27,6 +27,7 @@
     "@nx/rspack": "20.1.4",
     "@nx/vite": "20.1.4",
     "@nx/web": "20.1.4",
+    "@react-native-community/cli": "latest",
     "@rnx-kit/align-deps": "^2.5.1",
     "@rspack/cli": "1.0.5",
     "@rspack/core": "1.0.5",
@@ -36,7 +37,6 @@
     "@swc-node/register": "~1.9.1",
     "@swc/cli": "~0.3.12",
     "@swc/core": "~1.5.7",
-    "mprocs": "^0.7.1",
     "@swc/helpers": "~0.5.11",
     "@testing-library/react": "15.0.6",
     "@types/node": "18.16.9",
@@ -52,6 +52,7 @@
     "eslint-plugin-react": "7.35.0",
     "eslint-plugin-react-hooks": "5.0.0",
     "jsdom": "~22.1.0",
+    "mprocs": "^0.7.1",
     "nx": "20.1.4",
     "prettier": "^2.6.2",
     "react-refresh": "~0.14.0",
@@ -65,5 +66,19 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-router-dom": "6.11.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "zephyr-repack-plugin": "0.0.0-canary-20241122175815",
+      "zephyr-edge-contract": "0.0.0-canary-20241122175815",
+      "zephyr-agent": "0.0.0-canary-20241122175815",
+      "zephyr-xpack-internal": "0.0.0-canary-20241122175815",
+      "@react-native/dev-middleware": "0.76.1",
+      "@zephyr-merch/mobile-sdk": "workspace:*"
+    },
+    "patchedDependencies": {
+      "@react-native/community-cli-plugin": "patches/@react-native__community-cli-plugin.patch",
+      "@callstack/repack": "patches/@callstack__repack.patch"
+    }
   }
 }

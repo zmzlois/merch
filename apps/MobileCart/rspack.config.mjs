@@ -5,6 +5,7 @@ import * as Repack from '@callstack/repack';
 import TerserPlugin from 'terser-webpack-plugin';
 import { getSharedDependencies } from '@zephyr-merch/mobile-sdk';
 import Dotenv from "dotenv-webpack"
+import { withZephyr } from "zephyr-repack-plugin"
 
 const dirname = Repack.getDirname(import.meta.url);
 const { resolve } = createRequire(import.meta.url);
@@ -76,7 +77,7 @@ export default (env) => {
     context,
      // empty entry when building as federated miniapp
     // TODO remove this workaround when fixed in Re.Pack
-    entry: entry,
+    entry: {},
     resolve: {
       /**
        * `getResolveOptions` returns additional resolution configuration for React Native.
@@ -274,6 +275,17 @@ export default (env) => {
        // silence missing @react-native-masked-view optionally required by @react-navigation/elements
        new rspack.IgnorePlugin({
         resourceRegExp: /^@react-native-masked-view/,
+      }),
+
+      new Repack.plugins.ModuleFederationPluginV2({
+        name: 'MobileCart',
+        filename: 'MobileCart.container.js.bundle',
+        dts: false,
+        exposes: {
+          './CartNavigator': './navigation/CartNavigator.tsx',
+        }, 
+        shared: getSharedDependencies({eager: STANDALONE})
+        
       }),
     ],
   };

@@ -42,3 +42,10 @@ Thumbs.db
 .nx/workspace-data
 
 vite.config.*.timestamp*
+
+# Nested environment files
+**/.env
+.dev.vars
+**/.dev.vars
+.env.local
+**/.env.local

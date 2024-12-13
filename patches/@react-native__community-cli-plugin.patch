@@ -1,0 +1,63 @@
+diff --git a/dist/commands/start/OpenDebuggerKeyboardHandler.js b/dist/commands/start/OpenDebuggerKeyboardHandler.js
+index 913cd04888330f82589f568fa887fc2a06a52185..a48abecc196c2c889a3cacdb09f61bf20d1795ed 100644
+--- a/dist/commands/start/OpenDebuggerKeyboardHandler.js
++++ b/dist/commands/start/OpenDebuggerKeyboardHandler.js
+@@ -5,7 +5,6 @@ Object.defineProperty(exports, "__esModule", {
+ });
+ exports.default = void 0;
+ var _chalk = _interopRequireDefault(require("chalk"));
+-var _nodeFetch = _interopRequireDefault(require("node-fetch"));
+ function _interopRequireDefault(e) {
+   return e && e.__esModule ? e : { default: e };
+ }
+@@ -21,7 +20,7 @@ class OpenDebuggerKeyboardHandler {
+     this.#targetsShownForSelection = null;
+     this.#clearTerminalMenu();
+     try {
+-      await (0, _nodeFetch.default)(
++      await fetch(
+         new URL(
+           "/open-debugger?target=" + encodeURIComponent(target.id),
+           this.#devServerUrl
+@@ -45,7 +44,7 @@ class OpenDebuggerKeyboardHandler {
+     this.#setTerminalMenu("Fetching available debugging targets...");
+     this.#targetsShownForSelection = null;
+     try {
+-      const res = await (0, _nodeFetch.default)(
++      const res = await fetch(
+         this.#devServerUrl + "/json/list",
+         {
+           method: "POST",
+diff --git a/dist/utils/isDevServerRunning.js b/dist/utils/isDevServerRunning.js
+index 553e851b00a7d71469370a5319662254407e8c58..27296006f9a6152a3939a334efe0672d201a2f2a 100644
+--- a/dist/utils/isDevServerRunning.js
++++ b/dist/utils/isDevServerRunning.js
+@@ -5,7 +5,6 @@ Object.defineProperty(exports, "__esModule", {
+ });
+ exports.default = isDevServerRunning;
+ var _net = _interopRequireDefault(require("net"));
+-var _nodeFetch = _interopRequireDefault(require("node-fetch"));
+ function _interopRequireDefault(e) {
+   return e && e.__esModule ? e : { default: e };
+ }
+@@ -15,7 +14,7 @@ async function isDevServerRunning(devServerUrl, projectRoot) {
+     if (!(await isPortOccupied(hostname, port))) {
+       return "not_running";
+     }
+-    const statusResponse = await (0, _nodeFetch.default)(
++    const statusResponse = await fetch(
+       `${devServerUrl}/status`
+     );
+     const body = await statusResponse.text();
+diff --git a/package.json b/package.json
+index 09871e59d70d5494824f54a447507fa0b6b4c2a7..7b78ad9c31c028b6779ebfad430a02be83e8d2d0 100644
+--- a/package.json
++++ b/package.json
+@@ -30,7 +30,6 @@
+     "metro": "^0.81.0",
+     "metro-config": "^0.81.0",
+     "metro-core": "^0.81.0",
+-    "node-fetch": "^2.2.0",
+     "readline": "^1.3.0"
+   },
+   "devDependencies": {

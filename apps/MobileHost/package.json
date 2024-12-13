@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android --no-packager",
-    "ios": "react-native run-ios --no-packager --simulator='iPhone 15 Pro Max'",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios --no-packager",
     "start": "react-native start",
     "lint": "eslint .",
     "test": "jest",
@@ -17,10 +17,14 @@
     "adbreverse": "adb reverse tcp:8081 tcp:8081"
   },
   "dependencies": {
+    "@babel/plugin-syntax-typescript": "^7.25.9",
     "@module-federation/enhanced": "0.6.13",
+    "@react-native/babel-plugin-codegen": "^0.76.3",
+    "@react-native/codegen": "^0.76.5",
     "@react-native/gradle-plugin": "^0.76.3",
     "@react-navigation/native": "6.1.18",
     "@react-navigation/native-stack": "6.11.0",
+    "babel-plugin-syntax-hermes-parser": "^0.25.1",
     "dotenv-webpack": "^8.1.0",
     "lottie-react-native": "7.1.0",
     "react": "18.3.1",
@@ -53,7 +57,7 @@
     "@types/react": "^18.2.6",
     "@types/react-native-vector-icons": "^6.4.12",
     "@types/react-test-renderer": "^18.3.0",
-    "@zephyr-merch/mobile-sdk": "workspace:*",
+    "@zephyr-merch/mobile-sdk": "0.0.1",
     "babel-jest": "^29.6.3",
     "babel-loader": "^9.2.1",
     "dotenv-webpack": "^8.1.0",
@@ -64,7 +68,7 @@
     "terser-webpack-plugin": "^5.3.10",
     "typescript": "^5.6.3",
     "webpack": "^5.95.0",
-    "zephyr-repack-plugin": "0.0.0-canary-20241121202227"
+    "zephyr-repack-plugin": "0.0.0-canary-20241122175815"
   },
   "engines": {
     "node": ">=18"

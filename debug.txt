@@ -1,0 +1,69 @@
+
+> MobileHost@0.0.1 start /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/apps/MobileHost
+> react-native start "--platform" "ios"
+
+📦 Re.Pack 5.0.0-rc.2
+
+ r: Reload app
+ d: Open developer menu
+ j: Open debugger
+
+Press Ctrl+c or Ctrl+z to quit the dev server
+
+ℹ [21:43:19.827Z][DevServer] Server listening at http://[::1]:8081 
+ℹ [21:43:19.829Z][DevServer] Server listening at http://127.0.0.1:8081 
+ℹ [21:43:19.829Z][DevServer] Starting build for platforms: ios 
+[32mFederated types extraction completed[39m
+
+ℹ [21:43:23.195Z][LoggerPlugin] Bundle built with warnings { time: [33m3364[39m } 
+⚠ [21:43:23.195Z][LoggerPlugin] Warning in "../../node_modules/.pnpm/@module-federation+runtime@0.6.13/node_modules/@module-federation/runtime/dist/index.cjs.js":
+  ⚠ Critical dependency: the request of a dependency is an expression
+     ╭─[116:89]
+ 114 │                         if (!remoteEntryExports) {
+ 115 │                             Promise.resolve(/* webpackIgnore: true */ entry).then(function(p) {
+ 116 │                                 return /*#__PURE__*/ _interop_require_wildcard._(require(p));
+     ·                                                                                          ──
+ 117 │                             }).then(resolve)["catch"](reject);
+ 118 │                         } else {
+     ╰────
+ 
+ℹ [21:43:40.214Z][Console] Bridgeless mode is enabled 
+⚠ [21:43:40.215Z][Console] ProgressBarAndroid has been extracted from react-native core and will be removed in a future release. It can now be installed and imported from '@react-native-community/progress-bar-android' instead of 'react-native'. See https://github.com/react-native-progress-view/progress-bar-android 
+⚠ [21:43:40.216Z][Console] Clipboard has been extracted from react-native core and will be removed in a future release. It can now be installed and imported from '@react-native-clipboard/clipboard' instead of 'react-native'. See https://github.com/react-native-clipboard/clipboard 
+⚠ [21:43:40.216Z][Console] PushNotificationIOS has been extracted from react-native core and will be removed in a future release. It can now be installed and imported from '@react-native-community/push-notification-ios' instead of 'react-native'. See https://github.com/react-native-push-notification/ios 
+⚠ [21:43:40.218Z][Console] [HMRClient] Bundle contains warnings: {"message": "  ⚠ Critical dependency: the request of a dependency is an expression
+     ╭─[116:89]
+ 114 │                         if (!remoteEntryExports) {
+ 115 │                             Promise.resolve(/* webpackIgnore: true */ entry).then(function(p) {
+ 116 │                                 return /*#__PURE__*/ _interop_require_wildcard._(require(p));
+     ·                                                                                          ──
+ 117 │                             }).then(resolve)[\"catch\"](reject);
+ 118 │                         } else {
+     ╰────
+", "moduleIdentifier": "builtin:swc-loader??ruleSet[1].rules[2].rules[0].use[0]!builtin:react-refresh-loader!/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/@module-federation+runtime@0.6.13/node_modules/@module-federation/runtime/dist/index.cjs.js", "moduleName": "../../node_modules/.pnpm/@module-federation+runtime@0.6.13/node_modules/@module-federation/runtime/dist/index.cjs.js"} 
+ℹ [21:43:40.218Z][Console] Running "MobileHost" with {"rootTag":1,"initialProps":{"concurrentRoot":true},"fabric":true} 
+✖ [21:43:41.984Z][DevServer] Failed to create code frame {
+  reqId: [32m'req-5'[39m,
+  error: [32m'File node_modules/.pnpm/@module-federation+sdk@0.6.13/node_modules/@module-federation/sdk/dist/index.cjs.js not found'[39m
+} 
+ℹ [21:48:19.542Z][Console] Bridgeless mode is enabled 
+⚠ [21:48:19.543Z][Console] ProgressBarAndroid has been extracted from react-native core and will be removed in a future release. It can now be installed and imported from '@react-native-community/progress-bar-android' instead of 'react-native'. See https://github.com/react-native-progress-view/progress-bar-android 
+⚠ [21:48:19.543Z][Console] Clipboard has been extracted from react-native core and will be removed in a future release. It can now be installed and imported from '@react-native-clipboard/clipboard' instead of 'react-native'. See https://github.com/react-native-clipboard/clipboard 
+⚠ [21:48:19.543Z][Console] PushNotificationIOS has been extracted from react-native core and will be removed in a future release. It can now be installed and imported from '@react-native-community/push-notification-ios' instead of 'react-native'. See https://github.com/react-native-push-notification/ios 
+⚠ [21:48:19.544Z][Console] [HMRClient] Bundle contains warnings: {"message": "  ⚠ Critical dependency: the request of a dependency is an expression
+     ╭─[116:89]
+ 114 │                         if (!remoteEntryExports) {
+ 115 │                             Promise.resolve(/* webpackIgnore: true */ entry).then(function(p) {
+ 116 │                                 return /*#__PURE__*/ _interop_require_wildcard._(require(p));
+     ·                                                                                          ──
+ 117 │                             }).then(resolve)[\"catch\"](reject);
+ 118 │                         } else {
+     ╰────
+", "moduleIdentifier": "builtin:swc-loader??ruleSet[1].rules[2].rules[0].use[0]!builtin:react-refresh-loader!/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/@module-federation+runtime@0.6.13/node_modules/@module-federation/runtime/dist/index.cjs.js", "moduleName": "../../node_modules/.pnpm/@module-federation+runtime@0.6.13/node_modules/@module-federation/runtime/dist/index.cjs.js"} 
+ℹ [21:48:19.545Z][Console] Running "MobileHost" with {"rootTag":1,"initialProps":{"concurrentRoot":true},"fabric":true} 
+ℹ [21:48:21.775Z][DevServer] Launching DevTools... 
+✖ [21:48:52.141Z][DevServer] Failed to create code frame {
+  reqId: [32m'req-4h'[39m,
+  error: [32m'File node_modules/.pnpm/@module-federation+sdk@0.6.13/node_modules/@module-federation/sdk/dist/index.cjs.js not found'[39m
+} 
+⚠ [21:49:22.730Z][Console] Failed to open debugger. Please check that the dev server is running and reload the app. 
