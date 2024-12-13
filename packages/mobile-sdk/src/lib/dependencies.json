@@ -31,10 +31,6 @@
         "name": "react-native-vector-icons",
         "version": "10.2.0"
     },
-    "@module-federation/enhanced": {
-        "name": "@module-federation/enhanced",
-        "version": "0.6.13"
-    },
     "react-native-mmkv": {
         "name": "react-native-mmkv",
         "version": "3.1.0"
@@ -50,9 +46,5 @@
     "lottie-react-native": {
         "name": "lottie-react-native",
         "version": "7.1.0"
-    },
-    "zephyr-repack-plugin": {
-        "name": "zephyr-repack-plugin",
-        "version": "0.0.0-canary-20241122175815"
     }
 }

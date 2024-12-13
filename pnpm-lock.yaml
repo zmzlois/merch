@@ -10,6 +10,7 @@ overrides:
   zephyr-agent: 0.0.0-canary-20241122175815
   zephyr-xpack-internal: 0.0.0-canary-20241122175815
   '@react-native/dev-middleware': 0.76.1
+  '@zephyr-merch/mobile-sdk': workspace:*
 
 patchedDependencies:
   '@callstack/repack':
@@ -230,8 +231,8 @@ importers:
         specifier: ^7.25.0
         version: 7.26.0
       '@callstack/repack':
-        specifier: 5.0.0-rc.3
-        version: 5.0.0-rc.3(patch_hash=qoajwyzfqlsdk6uuy5uvlx2l3a)(@module-federation/enhanced@0.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2)(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13))(esbuild@0.17.19)))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.2))(@rspack/core@1.1.6(@swc/helpers@0.5.13))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.1)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13))(esbuild@0.17.19))
+        specifier: 5.0.0-rc.2
+        version: 5.0.0-rc.2(patch_hash=qoajwyzfqlsdk6uuy5uvlx2l3a)(@module-federation/enhanced@0.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2)(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13))(esbuild@0.17.19)))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.2))(@rspack/core@1.1.6(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.1(react-refresh@0.14.2))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.1)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13))(esbuild@0.17.19))
       '@react-native-community/cli':
         specifier: ^15.1.2
         version: 15.1.3(typescript@5.7.2)
@@ -384,8 +385,8 @@ importers:
         specifier: ^7.25.0
         version: 7.26.0
       '@callstack/repack':
-        specifier: 5.0.0-rc.3
-        version: 5.0.0-rc.3(patch_hash=qoajwyzfqlsdk6uuy5uvlx2l3a)(@module-federation/enhanced@0.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2)(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13))))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.2))(@rspack/core@1.1.6(@swc/helpers@0.5.13))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.1)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13)))
+        specifier: 5.0.0-rc.2
+        version: 5.0.0-rc.2(patch_hash=qoajwyzfqlsdk6uuy5uvlx2l3a)(@module-federation/enhanced@0.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2)(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13))))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.2))(@rspack/core@1.1.6(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.1(react-refresh@0.14.2))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.1)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13)))
       '@react-native-community/cli':
         specifier: ^15.1.2
         version: 15.1.3(typescript@5.7.2)
@@ -1202,8 +1203,8 @@ packages:
     peerDependencies:
       react: '>=16.3.0'
 
-  '@callstack/repack-dev-server@5.0.0-rc.3':
-    resolution: {integrity: sha512-lyF/miApdY0mqRkdeDV0rgVL2eWFT2aTeh0j71kkwxHuiLVNWCZgvdHzizam3sFUX8z0tLqxP2ggYcjnWQmr0w==}
+  '@callstack/repack-dev-server@5.0.0-rc.2':
+    resolution: {integrity: sha512-f4YxAsdL47LbBUwI2i+OaUkMhdfaHaI9Bkiv6Cr3+/8ugR4LV3u8kT8FcYdifZWfc1sWzPbhaJ9MLFQMKKLOgw==}
     engines: {node: '>=18'}
     peerDependencies:
       '@react-native-community/cli-server-api': '>=13.6.4'
@@ -1211,14 +1212,15 @@ packages:
       '@react-native-community/cli-server-api':
         optional: true
 
-  '@callstack/repack@5.0.0-rc.3':
-    resolution: {integrity: sha512-eryRfOdGebtPu+VoKso6YQVoqCKKdUurjVX062YaqgZnLmGhON6SjHHBlULRlMV6niP9dcCL9ggZMGfyzL4bDw==}
+  '@callstack/repack@5.0.0-rc.2':
+    resolution: {integrity: sha512-fhe1TjYS0E9mIAdRbZVngxhZxnpHb4h6RErJ3hPO/nIdhARvh2jn/+xY3GCgusd7Q7J8qcHWaGfXTbXeawCuYg==}
     engines: {node: '>=18'}
     peerDependencies:
       '@module-federation/enhanced': '>=0.6.10'
       '@react-native-community/cli': '*'
       '@react-native-community/cli-types': '*'
       '@rspack/core': '>=1'
+      '@rspack/plugin-react-refresh': '>=1'
       react-native: '>=0.74'
       webpack: '>=5.90'
     peerDependenciesMeta:
@@ -2964,14 +2966,6 @@ packages:
   '@rspack/plugin-minify@0.7.5':
     resolution: {integrity: sha512-BgsLdb4vUOQjOukMEBM/8NZZlC9MU/Rs6lt2ZQwZ1lF8vNyuLGPSTtGYM4+fcU3YWRmMgietIEHQDEGkdMlG0g==}
     deprecated: this package is deprecated use terser-webpack-plugin instead
-
-  '@rspack/plugin-react-refresh@1.0.0':
-    resolution: {integrity: sha512-WvXkLewW5G0Mlo5H1b251yDh5FFiH4NDAbYlFpvFjcuXX2AchZRf9zdw57BDE/ADyWsJgA8kixN/zZWBTN3iYA==}
-    peerDependencies:
-      react-refresh: '>=0.10.0 <1.0.0'
-    peerDependenciesMeta:
-      react-refresh:
-        optional: true
 
   '@rspack/plugin-react-refresh@1.0.1':
     resolution: {integrity: sha512-KSBc3bsr3mrAPViv7w9MpE9KEWm6q87EyRXyHlRfJ9PpQ56NbX9KZ7AXo7jPeECb0q5sfpM2PSEf+syBiMgLSw==}
@@ -9666,7 +9660,7 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       react: 18.3.1
 
-  '@callstack/repack-dev-server@5.0.0-rc.3(@react-native-community/cli-server-api@15.1.3)':
+  '@callstack/repack-dev-server@5.0.0-rc.2(@react-native-community/cli-server-api@15.1.3)':
     dependencies:
       '@babel/code-frame': 7.26.2
       '@fastify/middie': 8.3.3
@@ -9685,13 +9679,13 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@callstack/repack@5.0.0-rc.3(patch_hash=qoajwyzfqlsdk6uuy5uvlx2l3a)(@module-federation/enhanced@0.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2)(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13))(esbuild@0.17.19)))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.2))(@rspack/core@1.1.6(@swc/helpers@0.5.13))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.1)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13))(esbuild@0.17.19))':
+  '@callstack/repack@5.0.0-rc.2(patch_hash=qoajwyzfqlsdk6uuy5uvlx2l3a)(@module-federation/enhanced@0.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2)(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13))(esbuild@0.17.19)))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.2))(@rspack/core@1.1.6(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.1(react-refresh@0.14.2))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.1)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13))(esbuild@0.17.19))':
     dependencies:
-      '@callstack/repack-dev-server': 5.0.0-rc.3(@react-native-community/cli-server-api@15.1.3)
+      '@callstack/repack-dev-server': 5.0.0-rc.2(@react-native-community/cli-server-api@15.1.3)
       '@discoveryjs/json-ext': 0.5.7
       '@react-native-community/cli': 15.1.3(typescript@5.7.2)
       '@react-native-community/cli-types': 15.1.3
-      '@rspack/plugin-react-refresh': 1.0.0(react-refresh@0.14.2)
+      '@rspack/plugin-react-refresh': 1.0.1(react-refresh@0.14.2)
       colorette: 2.0.20
       dedent: 0.7.0
       events: 3.3.0
@@ -9717,13 +9711,13 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@callstack/repack@5.0.0-rc.3(patch_hash=qoajwyzfqlsdk6uuy5uvlx2l3a)(@module-federation/enhanced@0.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2)(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13))))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.2))(@rspack/core@1.1.6(@swc/helpers@0.5.13))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.1)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13)))':
+  '@callstack/repack@5.0.0-rc.2(patch_hash=qoajwyzfqlsdk6uuy5uvlx2l3a)(@module-federation/enhanced@0.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2)(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13))))(@react-native-community/cli-server-api@15.1.3)(@react-native-community/cli-types@15.1.3)(@react-native-community/cli@15.1.3(typescript@5.7.2))(@rspack/core@1.1.6(@swc/helpers@0.5.13))(@rspack/plugin-react-refresh@1.0.1(react-refresh@0.14.2))(react-native@0.76.1(@babel/core@7.26.0)(@babel/preset-env@7.26.0(@babel/core@7.26.0))(@react-native-community/cli-server-api@15.1.3)(@types/react@18.3.1)(encoding@0.1.13)(react@18.3.1))(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13)))':
     dependencies:
-      '@callstack/repack-dev-server': 5.0.0-rc.3(@react-native-community/cli-server-api@15.1.3)
+      '@callstack/repack-dev-server': 5.0.0-rc.2(@react-native-community/cli-server-api@15.1.3)
       '@discoveryjs/json-ext': 0.5.7
       '@react-native-community/cli': 15.1.3(typescript@5.7.2)
       '@react-native-community/cli-types': 15.1.3
-      '@rspack/plugin-react-refresh': 1.0.0(react-refresh@0.14.2)
+      '@rspack/plugin-react-refresh': 1.0.1(react-refresh@0.14.2)
       colorette: 2.0.20
       dedent: 0.7.0
       events: 3.3.0
@@ -12164,13 +12158,6 @@ snapshots:
       esbuild: 0.16.3
       terser: 5.16.1
       webpack-sources: 3.2.3
-
-  '@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.2)':
-    dependencies:
-      error-stack-parser: 2.1.4
-      html-entities: 2.5.2
-    optionalDependencies:
-      react-refresh: 0.14.2
 
   '@rspack/plugin-react-refresh@1.0.1(react-refresh@0.14.2)':
     dependencies:

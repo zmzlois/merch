@@ -73,7 +73,8 @@
       "zephyr-edge-contract": "0.0.0-canary-20241122175815",
       "zephyr-agent": "0.0.0-canary-20241122175815",
       "zephyr-xpack-internal": "0.0.0-canary-20241122175815",
-      "@react-native/dev-middleware": "0.76.1"
+      "@react-native/dev-middleware": "0.76.1",
+      "@zephyr-merch/mobile-sdk": "workspace:*"
     },
     "patchedDependencies": {
       "@react-native/community-cli-plugin": "patches/@react-native__community-cli-plugin.patch",

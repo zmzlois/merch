@@ -77,7 +77,7 @@ export default (env) => {
     context,
      // empty entry when building as federated miniapp
     // TODO remove this workaround when fixed in Re.Pack
-    entry: entry,
+    entry: {},
     resolve: {
       /**
        * `getResolveOptions` returns additional resolution configuration for React Native.
