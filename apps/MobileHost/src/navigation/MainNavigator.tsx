@@ -4,8 +4,6 @@ import {
   NativeStackNavigationProp,
 } from '@react-navigation/native-stack';
 import {StyleSheet} from 'react-native';
-import CartCheckoutNavigator from './CartCheckoutNavigator';
-import Cats from '../components/Cats';
 import CartScreen from '../screens/CartScreen';
 import HomeScreen from '../screens/HomeScreen';
 
@@ -14,10 +12,10 @@ export type MainStackParamList = {
   Cart: undefined;
 };
 
-const Stack = createNativeStackNavigator();
-
 export type MainStackNavigationProp =
   NativeStackNavigationProp<MainStackParamList>;
+
+const Stack = createNativeStackNavigator<MainStackParamList>();
 
 export default function MainNavigator() {
   return (
@@ -31,7 +29,6 @@ export default function MainNavigator() {
       }}>
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Cart" component={CartScreen} />
-      {/* <Stack.Screen name="Cart" component={CartCheckoutNavigator} /> */}
     </Stack.Navigator>
   );
 }

@@ -1,0 +1,680 @@
+
+> MobileCart@0.0.1 start /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/apps/MobileCart
+> react-native start --port 9000 "--platform" "ios"
+
+📦 Re.Pack 5.0.0-rc.2
+
+ r: Reload app
+ d: Open developer menu
+ j: Open debugger
+
+Press Ctrl+c or Ctrl+z to quit the dev server
+
+2024-12-14T03:43:47.506Z zephyr:log Initializing: Zephyr Engine for /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/apps/MobileCart
+2024-12-14T03:43:47.507Z zephyr:log Initializing: npm package info
+2024-12-14T03:43:47.509Z zephyr:log Initializing: git info
+2024-12-14T03:43:47.554Z zephyr:log Loaded: git info {
+  git: {
+    name: 'zmzlois',
+    email: 'lois.z@comcord.vision',
+    branch: 'main',
+    commit: '11baa4a6c8983c2e330417b4709de4d80f83f6db'
+  },
+  app: { org: 'zmzlois', project: 'zephyr-merch' }
+}
+2024-12-14T03:43:47.555Z zephyr:log Initializing: checking authentication
+2024-12-14T03:43:47.556Z zephyr:log You are already logged in
+2024-12-14T03:43:47.556Z zephyr:log Initialized: loading of application configuration
+2024-12-14T03:43:47.556Z zephyr:log Getting application configuration from node-persist
+2024-12-14T03:43:47.556Z zephyr:log Starting new build
+2024-12-14T03:43:47.556Z zephyr:log Initializing: loading of hash list
+2024-12-14T03:43:47.556Z zephyr:log Getting application configuration from node-persist
+2024-12-14T03:43:47.556Z zephyr:log Initializing: loading of build id
+2024-12-14T03:43:47.556Z zephyr:log Getting application configuration from node-persist
+2024-12-14T03:43:47.556Z zephyr:log Initializing: logger
+2024-12-14T03:43:47.556Z zephyr:log Configuring with Zephyr...
+2024-12-14T03:43:47.556Z zephyr:log Deploy build target:  ios
+2024-12-14T03:43:47.556Z zephyr:log start replacing remote with delegate...
+2024-12-14T03:43:47.556Z zephyr:log config plugins: 4
+2024-12-14T03:43:47.556Z zephyr:log found module federation plugins: 1
+2024-12-14T03:43:47.556Z zephyr:log does mfConfig._options exist? {
+  name: 'MobileCart',
+  filename: 'MobileCart.container.js.bundle',
+  dts: false,
+  exposes: { './CartNavigator': './navigation/CartNavigator' },
+  shared: {
+    react: { singleton: true, eager: false, requiredVersion: '18.3.1' },
+    'react-native': { singleton: true, eager: false, requiredVersion: '0.76.1' },
+    '@react-navigation/native': { singleton: true, eager: false, requiredVersion: '6.1.18' },
+    '@react-navigation/native-stack': { singleton: true, eager: false, requiredVersion: '6.11.0' },
+    'react-native-paper': { singleton: true, eager: false, requiredVersion: '5.12.5' },
+    'react-native-safe-area-context': { singleton: true, eager: false, requiredVersion: '4.12.0' },
+    'react-native-screens': { singleton: true, eager: false, requiredVersion: '3.35.0' },
+    'react-native-vector-icons': { singleton: true, eager: false, requiredVersion: '10.2.0' },
+    'react-native-mmkv': { singleton: true, eager: false, requiredVersion: '3.1.0' },
+    'react-native-app-auth': { singleton: true, eager: false, requiredVersion: '8.0.0' },
+    'react-native-localize': { singleton: true, eager: false, requiredVersion: '3.3.0' },
+    'lottie-react-native': { singleton: true, eager: false, requiredVersion: '7.1.0' }
+  }
+}
+2024-12-14T03:43:47.557Z zephyr:log no remotes found in mfConfig, skipping resolving remote dependencies...
+2024-12-14T03:43:47.557Z zephyr:log dependency resolution completed successfully: [ undefined ]
+2024-12-14T03:43:47.557Z zephyr:log dependency resolution completed successfully...or at least trying to...
+2024-12-14T03:43:47.557Z zephyr:log Application uid created...
+Failed to load ./.env.
+2024-12-14T03:43:47.889Z zephyr:log set up zephyr deploy...
+ℹ [03:43:47.911Z][DevServer] Server listening at http://[::1]:9000 
+2024-12-14T03:43:47.912Z zephyr:log Loading Application Configuration from API...
+ℹ [03:43:47.912Z][DevServer] Server listening at http://127.0.0.1:9000 
+ℹ [03:43:47.912Z][DevServer] Starting build for platforms: ios 
+2024-12-14T03:43:47.913Z zephyr:log build started at 1734147827913
+2024-12-14T03:43:48.386Z zephyr:log [GET][http://zeapi.zephyr.local/application-config/mobilecart.zephyr-merch.zmzlois]: 449ms
+
+Response: {"value":{"application_uid":"mobilecart.zephyr-merch.zmzlois","AUTH0_CLIENT_ID":"ZsqL3PcPd5Tt2mNZimgvF5SRvvwvYqza","AUTH0_DOMAIN":"https://dev-auth.zephyr-cloud.io/","BUILD_ID_ENDPOINT":"http://build.zephyr.local","EDGE_URL":"http://ze.zephyr.local","email":"lois@zephyr-cloud.io",jwt: [REDACTED],"PLATFORM":"cloudflare","user_uuid":"8755b362-bf65-4d71-ad81-5b7ab891c0c9","username":"lois_zephyr-cloud_io"}}
+Options: {"headers":{"Authorization":"Bearer [REDACTED]"}}
+2024-12-14T03:43:48.386Z zephyr:log Saving Application Configuration to node-persist...
+2024-12-14T03:43:48.518Z zephyr:log Loaded: application configuration {
+  username: 'lois_zephyr-cloud_io',
+  email: 'lois@zephyr-cloud.io',
+  EDGE_URL: 'http://ze.zephyr.local'
+}
+2024-12-14T03:43:48.521Z zephyr:log Loaded: hash list with 13 entries
+2024-12-14T03:43:48.756Z zephyr:log [GET][http://build.zephyr.local/]: 236ms
+
+Response: {"8755b362-bf65-4d71-ad81-5b7ab891c0c9":"219"}
+Options: {"headers":{"can_write_jwt: [REDACTED],"Authorization":"Bearer [REDACTED]"}}
+2024-12-14T03:43:48.756Z zephyr:log Build ID retrieved... { '8755b362-bf65-4d71-ad81-5b7ab891c0c9': '219' }
+2024-12-14T03:43:48.756Z zephyr:log Loaded build id "219"
+2024-12-14T03:43:48.756Z zephyr:log Initialized: application configuration, build id and hash list
+2024-12-14T03:43:48.756Z zephyr:log Hi lois_zephyr-cloud_io!
+mobilecart.zephyr-merch.zmzlois#219
+
+2024-12-14T03:43:48.756Z zephyr:log Getting application configuration from node-persist
+2024-12-14T03:43:49.368Z zephyr:log [POST][http://zeapi.zephyr.local/logs]: 605ms
+ - 0.00kb
+Response: {"status":"ok"}
+Options: {"method":"POST","headers":{"Authorization":"Bearer [REDACTED]","Content-Type":"application/json"}}
+2024-12-14T03:43:50.514Z zephyr:log Waiting for deployment done
+2024-12-14T03:43:50.514Z zephyr:log zephyr agent started.
+2024-12-14T03:43:50.650Z zephyr:log Started getting build stats...
+2024-12-14T03:43:50.650Z zephyr:log process webpack graph...
+2024-12-14T03:43:50.667Z zephyr:log Error during finding Federation required shared package:  Error: Cannot find module '@react-native/gradle-plugin'
+Require stack:
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/build-stats/get-build-stats.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/repack_zephyr_agent.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/set-up-deploy.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/ze-repack-plugin.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/with-zephyr.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Function.resolve (node:internal/modules/helpers:190:19)
+    at /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js:25:54
+    at Array.reduce (<anonymous>)
+    at ComputeSharedDependenciesFederation (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js:22:34)
+    at FederationDashboardPlugin.buildVendorFederationMap (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js:149:80)
+    at FederationDashboardPlugin.processRspackGraph (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js:45:39)
+    at getBuildStats (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/build-stats/get-build-stats.js:20:44)
+    at repack_zephyr_agent (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/repack_zephyr_agent.js:18:72)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/build-stats/get-build-stats.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/repack_zephyr_agent.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/set-up-deploy.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/ze-repack-plugin.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/with-zephyr.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/index.js'
+  ]
+} Skipping package to next...
+2024-12-14T03:43:50.671Z zephyr:log Error during finding Federation required shared package:  ZephyrError: Were the required packages in Module federation plugin installed and included in package.json? We had error while trying to compute your shared dependencies.
+    at /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js:34:27
+    at Array.reduce (<anonymous>)
+    at ComputeSharedDependenciesFederation (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js:22:34)
+    at FederationDashboardPlugin.buildVendorFederationMap (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js:149:80)
+    at FederationDashboardPlugin.processRspackGraph (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js:45:39)
+    at getBuildStats (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/build-stats/get-build-stats.js:20:44)
+    at repack_zephyr_agent (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/repack_zephyr_agent.js:18:72)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ZE40004',
+  template: {},
+  data: undefined,
+  cause: "We couldn't find Federation shared package's version - are you sure this is a valid package installed from npm registry?"
+} Skipping package to next...
+2024-12-14T03:43:50.674Z zephyr:log Error during finding Federation required shared package:  Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: No "exports" main defined in /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/node_modules/@babel/runtime/package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:304:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:651:9)
+    at resolveExports (node:internal/modules/cjs/loader:590:36)
+    at Module._findPath (node:internal/modules/cjs/loader:667:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1129:27)
+    at Function.resolve (node:internal/modules/helpers:190:19)
+    at /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js:25:54
+    at Array.reduce (<anonymous>)
+    at ComputeSharedDependenciesFederation (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js:22:34)
+    at FederationDashboardPlugin.buildVendorFederationMap (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js:156:83)
+    at FederationDashboardPlugin.processRspackGraph (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js:45:39)
+    at getBuildStats (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/build-stats/get-build-stats.js:20:44)
+    at repack_zephyr_agent (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/repack_zephyr_agent.js:18:72)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_PACKAGE_PATH_NOT_EXPORTED'
+} Skipping package to next...
+2024-12-14T03:43:50.680Z zephyr:log Error during finding Federation required shared package:  Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: No "exports" main defined in /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/node_modules/@types/jest/package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:304:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:594:13)
+    at resolveExports (node:internal/modules/cjs/loader:590:36)
+    at Module._findPath (node:internal/modules/cjs/loader:667:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1129:27)
+    at Function.resolve (node:internal/modules/helpers:190:19)
+    at /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js:25:54
+    at Array.reduce (<anonymous>)
+    at ComputeSharedDependenciesFederation (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js:22:34)
+    at FederationDashboardPlugin.buildVendorFederationMap (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js:156:83)
+    at FederationDashboardPlugin.processRspackGraph (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js:45:39)
+    at getBuildStats (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/build-stats/get-build-stats.js:20:44)
+    at repack_zephyr_agent (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/repack_zephyr_agent.js:18:72)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_PACKAGE_PATH_NOT_EXPORTED'
+} Skipping package to next...
+2024-12-14T03:43:50.681Z zephyr:log Error during finding Federation required shared package:  Error [ERR_PACKAGE_PATH_NOT_EXPORTED]: No "exports" main defined in /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/@types/react/package.json
+    at exportsNotFound (node:internal/modules/esm/resolve:304:10)
+    at packageExportsResolve (node:internal/modules/esm/resolve:594:13)
+    at resolveExports (node:internal/modules/cjs/loader:590:36)
+    at Module._findPath (node:internal/modules/cjs/loader:667:31)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1129:27)
+    at Function.resolve (node:internal/modules/helpers:190:19)
+    at /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js:25:54
+    at Array.reduce (<anonymous>)
+    at ComputeSharedDependenciesFederation (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js:22:34)
+    at FederationDashboardPlugin.buildVendorFederationMap (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js:156:83)
+    at FederationDashboardPlugin.processRspackGraph (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js:45:39)
+    at getBuildStats (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/build-stats/get-build-stats.js:20:44)
+    at repack_zephyr_agent (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/repack_zephyr_agent.js:18:72)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'ERR_PACKAGE_PATH_NOT_EXPORTED'
+} Skipping package to next...
+2024-12-14T03:43:50.681Z zephyr:log Error during finding Federation required shared package:  Error: Cannot find module '@types/react-native-vector-icons'
+Require stack:
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/build-stats/get-build-stats.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/repack_zephyr_agent.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/set-up-deploy.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/ze-repack-plugin.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/with-zephyr.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Function.resolve (node:internal/modules/helpers:190:19)
+    at /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js:25:54
+    at Array.reduce (<anonymous>)
+    at ComputeSharedDependenciesFederation (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js:22:34)
+    at FederationDashboardPlugin.buildVendorFederationMap (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js:156:83)
+    at FederationDashboardPlugin.processRspackGraph (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js:45:39)
+    at getBuildStats (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/build-stats/get-build-stats.js:20:44)
+    at repack_zephyr_agent (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/repack_zephyr_agent.js:18:72)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/build-stats/get-build-stats.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/repack_zephyr_agent.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/set-up-deploy.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/ze-repack-plugin.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/with-zephyr.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/index.js'
+  ]
+} Skipping package to next...
+2024-12-14T03:43:50.682Z zephyr:log Error during finding Federation required shared package:  Error: Cannot find module '@types/react-test-renderer'
+Require stack:
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/build-stats/get-build-stats.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/repack_zephyr_agent.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/set-up-deploy.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/ze-repack-plugin.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/with-zephyr.js
+- /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1143:15)
+    at Function.resolve (node:internal/modules/helpers:190:19)
+    at /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js:25:54
+    at Array.reduce (<anonymous>)
+    at ComputeSharedDependenciesFederation (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js:22:34)
+    at FederationDashboardPlugin.buildVendorFederationMap (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js:156:83)
+    at FederationDashboardPlugin.processRspackGraph (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js:45:39)
+    at getBuildStats (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/build-stats/get-build-stats.js:20:44)
+    at repack_zephyr_agent (/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/repack_zephyr_agent.js:18:72)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/compute-dependencies.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/federation-graph/federation-plugin.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/build-stats/get-build-stats.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/repack_zephyr_agent.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/set-up-deploy.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/ze-repack-plugin.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/lib/with-zephyr.js',
+    '/Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/node_modules/.pnpm/zephyr-repack-plugin@0.0.0-canary-20241122175815_@swc+core@1.5.29_@swc+helpers@0.5.13__esbuild@0.17.19/node_modules/zephyr-repack-plugin/dist/index.js'
+  ]
+} Skipping package to next...
+2024-12-14T03:43:50.699Z zephyr:log 
+
+ graphData {
+  dependencies: [
+    { name: '@module-federation/enhanced', version: '0.6.13' },
+    { name: '@module-federation/sdk', version: '0.6.13' },
+    { name: '@react-native/babel-plugin-codegen', version: '0.76.5' },
+    { name: '@react-navigation/native', version: '0.0.0' },
+    { name: '@react-navigation/native-stack', version: '0.0.0' },
+    { name: 'babel-plugin-syntax-hermes-parser', version: '0.0.0' },
+    { name: 'dotenv-webpack', version: '8.1.0' },
+    { name: 'find-package-json', version: '1.2.0' },
+    { name: 'lottie-react-native', version: '0.0.0' },
+    { name: 'react', version: '18.3.1' },
+    { name: 'react-native', version: '0.76.1' },
+    { name: 'react-native-app-auth', version: '8.0.0' },
+    { name: 'react-native-localize', version: '0.0.0' },
+    { name: 'react-native-paper', version: '0.0.0' },
+    { name: 'react-native-safe-area-context', version: '0.0.0' },
+    { name: 'react-native-screens', version: '0.0.0' },
+    { name: 'react-native-vector-icons', version: '0.0.0' }
+  ],
+  devDependencies: [
+    { name: '@babel/core', version: '0.0.0' },
+    { name: '@babel/preset-env', version: '0.0.0' },
+    { name: '@callstack/repack', version: '0.0.0' },
+    { name: '@react-native-community/cli', version: '0.0.0' },
+    {
+      name: '@react-native-community/cli-platform-android',
+      version: '0.0.0'
+    },
+    {
+      name: '@react-native-community/cli-platform-ios',
+      version: '0.0.0'
+    },
+    { name: '@react-native/babel-preset', version: '0.0.0' },
+    { name: '@react-native/eslint-config', version: '0.76.1' },
+    { name: '@react-native/metro-config', version: '0.0.0' },
+    { name: '@react-native/typescript-config', version: '0.76.1' },
+    { name: '@rnx-kit/align-deps', version: '0.0.0' },
+    { name: '@rspack/core', version: '0.0.0' },
+    { name: '@rspack/plugin-react-refresh', version: '0.0.0' },
+    { name: '@swc/helpers', version: '0.0.0' },
+    { name: '@zephyr-merch/mobile-sdk', version: '0.0.0' },
+    { name: 'babel-jest', version: '0.0.0' },
+    { name: 'babel-loader', version: '0.0.0' },
+    { name: 'dotenv-webpack', version: '8.1.0' },
+    { name: 'eslint', version: '0.0.0' },
+    { name: 'jest', version: '0.0.0' },
+    { name: 'nx', version: '0.0.0' },
+    { name: 'prettier', version: '2.8.8' },
+    { name: 'react-test-renderer', version: '18.3.1' },
+    { name: 'terser-webpack-plugin', version: '0.0.0' },
+    { name: 'typescript', version: '0.0.0' },
+    { name: 'webpack', version: '0.0.0' },
+    { name: 'zephyr-repack-plugin', version: '0.0.2' }
+  ],
+  optionalDependencies: [],
+  id: 'MobileCart',
+  name: 'MobileCart',
+  remote: '',
+  metadata: { remote_bundle_name: 'MobileCart.container.js.bundle' },
+  versionData: undefined,
+  overrides: [
+    {
+      id: undefined,
+      name: undefined,
+      version: '',
+      location: undefined,
+      applicationID: 'MobileCart'
+    }
+  ],
+  consumes: [],
+  modules: [
+    {
+      id: 'CartNavigator:CartNavigator',
+      name: 'CartNavigator',
+      applicationID: 'CartNavigator',
+      requires: [],
+      file: './navigation/CartNavigator'
+    }
+  ],
+  environment: 'development',
+  version: '11baa4a6c8983c2e330417b4709de4d80f83f6db',
+  posted: 2024-12-14T03:43:50.690Z,
+  group: undefined,
+  sha: '11baa4a6c8983c2e330417b4709de4d80f83f6db',
+  buildHash: '225e36d67df0122c',
+  target: 'ios'
+} 
+
+
+2024-12-14T03:43:50.700Z zephyr:log get build stats done. {
+  dependencies: [
+    { name: '@module-federation/enhanced', version: '0.6.13' },
+    { name: '@module-federation/sdk', version: '0.6.13' },
+    { name: '@react-native/babel-plugin-codegen', version: '0.76.5' },
+    { name: '@react-navigation/native', version: '0.0.0' },
+    { name: '@react-navigation/native-stack', version: '0.0.0' },
+    { name: 'babel-plugin-syntax-hermes-parser', version: '0.0.0' },
+    { name: 'dotenv-webpack', version: '8.1.0' },
+    { name: 'find-package-json', version: '1.2.0' },
+    { name: 'lottie-react-native', version: '0.0.0' },
+    { name: 'react', version: '18.3.1' },
+    { name: 'react-native', version: '0.76.1' },
+    { name: 'react-native-app-auth', version: '8.0.0' },
+    { name: 'react-native-localize', version: '0.0.0' },
+    { name: 'react-native-paper', version: '0.0.0' },
+    { name: 'react-native-safe-area-context', version: '0.0.0' },
+    { name: 'react-native-screens', version: '0.0.0' },
+    { name: 'react-native-vector-icons', version: '0.0.0' }
+  ],
+  devDependencies: [
+    { name: '@babel/core', version: '0.0.0' },
+    { name: '@babel/preset-env', version: '0.0.0' },
+    { name: '@callstack/repack', version: '0.0.0' },
+    { name: '@react-native-community/cli', version: '0.0.0' },
+    {
+      name: '@react-native-community/cli-platform-android',
+      version: '0.0.0'
+    },
+    {
+      name: '@react-native-community/cli-platform-ios',
+      version: '0.0.0'
+    },
+    { name: '@react-native/babel-preset', version: '0.0.0' },
+    { name: '@react-native/eslint-config', version: '0.76.1' },
+    { name: '@react-native/metro-config', version: '0.0.0' },
+    { name: '@react-native/typescript-config', version: '0.76.1' },
+    { name: '@rnx-kit/align-deps', version: '0.0.0' },
+    { name: '@rspack/core', version: '0.0.0' },
+    { name: '@rspack/plugin-react-refresh', version: '0.0.0' },
+    { name: '@swc/helpers', version: '0.0.0' },
+    { name: '@zephyr-merch/mobile-sdk', version: '0.0.0' },
+    { name: 'babel-jest', version: '0.0.0' },
+    { name: 'babel-loader', version: '0.0.0' },
+    { name: 'dotenv-webpack', version: '8.1.0' },
+    { name: 'eslint', version: '0.0.0' },
+    { name: 'jest', version: '0.0.0' },
+    { name: 'nx', version: '0.0.0' },
+    { name: 'prettier', version: '2.8.8' },
+    { name: 'react-test-renderer', version: '18.3.1' },
+    { name: 'terser-webpack-plugin', version: '0.0.0' },
+    { name: 'typescript', version: '0.0.0' },
+    { name: 'webpack', version: '0.0.0' },
+    { name: 'zephyr-repack-plugin', version: '0.0.2' }
+  ],
+  optionalDependencies: [],
+  id: 'mobilecart.zephyr-merch.zmzlois',
+  name: 'MobileCart',
+  remote: 'MobileCart.container.js.bundle',
+  metadata: { remote_bundle_name: 'MobileCart.container.js.bundle' },
+  versionData: undefined,
+  overrides: [
+    {
+      id: undefined,
+      name: undefined,
+      version: '',
+      location: undefined,
+      applicationID: 'MobileCart'
+    }
+  ],
+  consumes: [],
+  modules: [
+    {
+      id: 'CartNavigator:CartNavigator',
+      name: 'CartNavigator',
+      applicationID: 'CartNavigator',
+      requires: [],
+      file: './navigation/CartNavigator'
+    }
+  ],
+  environment: 'development',
+  version: 'lois-zephyr-cloud-io-219.mobilecart.zephyr-merch.zmzlois',
+  posted: 2024-12-14T03:43:50.690Z,
+  group: undefined,
+  sha: '11baa4a6c8983c2e330417b4709de4d80f83f6db',
+  buildHash: '225e36d67df0122c',
+  target: 'ios',
+  edge: { url: 'http://ze.zephyr.local' },
+  app: {
+    name: 'MobileCart',
+    version: '0.0.1',
+    org: 'zmzlois',
+    project: 'zephyr-merch',
+    buildId: '219'
+  },
+  git: {
+    name: 'zmzlois',
+    email: 'lois.z@comcord.vision',
+    branch: 'main',
+    commit: '11baa4a6c8983c2e330417b4709de4d80f83f6db'
+  },
+  project: 'zephyr-merch',
+  tags: [],
+  remotes: [],
+  context: { isCI: { default: false } },
+  build_target: 'ios'
+}
+2024-12-14T03:43:50.700Z zephyr:log Started uploading...
+2024-12-14T03:43:50.700Z zephyr:log Initializing: upload assets
+2024-12-14T03:43:50.701Z zephyr:log Getting application configuration from node-persist
+2024-12-14T03:43:50.765Z zephyr:log [POST][http://ze.zephyr.local/upload?type=file&hash=dbf9ace0ba8ec53a161c0aeb662e00258ac61601f5c5d0edf32286a0c349d3ae&filename=vendors-node_modules_pnpm_react-native_0_76_1__babel_core_7_26_0__babel_preset-env_7_26_0__ba-12ec31.chunk.bundle]: 64ms
+ - 2143.52kb
+Response: {"message":"Skipping upload for existing files."}
+Options: {"method":"POST","headers":{"x-file-size":"2194965","x-file-path":"vendors-node_modules_pnpm_react-native_0_76_1__babel_core_7_26_0__babel_preset-env_7_26_0__ba-12ec31.chunk.bundle","can_write_jwt: [REDACTED],"Content-Type":"application/octet-stream"}}
+2024-12-14T03:43:50.765Z zephyr:log file vendors-node_modules_pnpm_react-native_0_76_1__babel_core_7_26_0__babel_preset-env_7_26_0__ba-12ec31.chunk.bundle uploaded in 64ms (2143.52kb)
+2024-12-14T03:43:55.728Z zephyr:log [POST][http://ze.zephyr.local/upload?type=file&hash=fc464a2e032f3f6c910ed3e482ae077dbdb2b2c358cfce582979f5fcf1d2351b&filename=node_modules_pnpm_react-native_0_76_1__babel_core_7_26_0__babel_preset-env_7_26_0__babel_core-cd8a86.chunk.bundle]: 5026ms
+ - 6.29kb
+Response: {"message":"Skipping upload for existing files."}
+Options: {"method":"POST","headers":{"x-file-size":"6442","x-file-path":"node_modules_pnpm_react-native_0_76_1__babel_core_7_26_0__babel_preset-env_7_26_0__babel_core-cd8a86.chunk.bundle","can_write_jwt: [REDACTED],"Content-Type":"application/octet-stream"}}
+2024-12-14T03:43:55.728Z zephyr:log file node_modules_pnpm_react-native_0_76_1__babel_core_7_26_0__babel_preset-env_7_26_0__babel_core-cd8a86.chunk.bundle uploaded in 5026ms (6.29kb)
+2024-12-14T03:43:55.729Z zephyr:log [POST][http://ze.zephyr.local/upload?type=file&hash=e6f845340ede1f945cb4fdad6d0a4cc72c80a21e70551e1510277343c3805f89&filename=node_modules_pnpm_swc_helpers_0_5_13_node_modules_swc_helpers_cjs__extends_cjs-node_modules_p-eef2203.chunk.bundle.map]: 5026ms
+ - 2.15kb
+Response: {"message":"Skipping upload for existing files."}
+Options: {"method":"POST","headers":{"x-file-size":"2200","x-file-path":"node_modules_pnpm_swc_helpers_0_5_13_node_modules_swc_helpers_cjs__extends_cjs-node_modules_p-eef2203.chunk.bundle.map","can_write_jwt: [REDACTED],"Content-Type":"application/octet-stream"}}
+2024-12-14T03:43:55.729Z zephyr:log file node_modules_pnpm_swc_helpers_0_5_13_node_modules_swc_helpers_cjs__extends_cjs-node_modules_p-eef2203.chunk.bundle.map uploaded in 5026ms (2.15kb)
+2024-12-14T03:44:00.718Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.719Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.720Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.721Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.721Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.722Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.722Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.722Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.722Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.723Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.723Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.723Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.723Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.723Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.724Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.724Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.724Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.724Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.724Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.725Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.725Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.725Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.725Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.725Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.726Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.726Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.726Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.726Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.727Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.727Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.727Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.727Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.727Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.727Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.728Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.728Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.728Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.728Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.728Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.729Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.729Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.729Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.729Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.729Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.729Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.730Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.730Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.730Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.730Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.731Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.731Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.731Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.731Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.731Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.732Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.732Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.732Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.732Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.732Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.732Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.732Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.733Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.733Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.733Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.733Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.733Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.734Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.734Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.734Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.734Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.734Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.734Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.735Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.735Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.735Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.735Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.736Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.736Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.736Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.736Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.736Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.737Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.737Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.737Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.737Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.738Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:00.742Z zephyr:log [POST][http://ze.zephyr.local/upload?type=file&hash=aec28dae2be8a67196dfcf51e1d44d8b2a27627a3384ee7094dd261fa83db6f5&filename=vendors-node_modules_pnpm_react-native_0_76_1__babel_core_7_26_0__babel_preset-env_7_26_0__ba-18d6a5.chunk.bundle.map]: 23ms
+ - 161.58kb
+Response: {"message":"Skipping upload for existing files."}
+Options: {"method":"POST","headers":{"x-file-size":"165456","x-file-path":"vendors-node_modules_pnpm_react-native_0_76_1__babel_core_7_26_0__babel_preset-env_7_26_0__ba-18d6a5.chunk.bundle.map","can_write_jwt: [REDACTED],"Content-Type":"application/octet-stream"}}
+2024-12-14T03:44:00.742Z zephyr:log file vendors-node_modules_pnpm_react-native_0_76_1__babel_core_7_26_0__babel_preset-env_7_26_0__ba-18d6a5.chunk.bundle.map uploaded in 10039ms (161.58kb)
+2024-12-14T03:44:00.742Z zephyr:log [POST][http://ze.zephyr.local/upload?type=file&hash=2940bd392c6a3cbf6a325d800ba8167999ec8068847ee271a73313778318de6f&filename=node_modules_pnpm_react-native_0_76_1__babel_core_7_26_0__babel_preset-env_7_26_0__babel_core-26fb9a.chunk.bundle.map]: 22ms
+ - 33.21kb
+Response: {"message":"Skipping upload for existing files."}
+Options: {"method":"POST","headers":{"x-file-size":"34004","x-file-path":"node_modules_pnpm_react-native_0_76_1__babel_core_7_26_0__babel_preset-env_7_26_0__babel_core-26fb9a.chunk.bundle.map","can_write_jwt: [REDACTED],"Content-Type":"application/octet-stream"}}
+2024-12-14T03:44:00.742Z zephyr:log file node_modules_pnpm_react-native_0_76_1__babel_core_7_26_0__babel_preset-env_7_26_0__babel_core-26fb9a.chunk.bundle.map uploaded in 10038ms (33.21kb)
+2024-12-14T03:44:10.721Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.725Z zephyr:log ZE20017: Could not upload file to your Edge Provider. This error will affect your tags and environments and it might fail deployments to custom domains.
+
+Please check your network connection and try again.
+
+Visit https://docs.zephyr-cloud.io/errors/ZE20017 for more information
+Or join our Discord server at https://zephyr-cloud.io/discord
+
+Complete error details available at /var/folders/n2/tgfq07nd28x4dkfwtsvghlt80000gn/T/ze5534634396.json
+2024-12-14T03:44:10.725Z zephyr:log Deployment done
+
+2024-12-14T03:44:10.728Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.728Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.728Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.728Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.729Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.729Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.729Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.729Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.730Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.730Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.730Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.730Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.730Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.730Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.731Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.731Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.731Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.731Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.731Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.732Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.732Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.732Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.732Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.732Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.733Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.733Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.733Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.733Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.734Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.734Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.734Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.734Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.734Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.734Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.734Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.734Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.735Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.735Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.735Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.736Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.736Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.736Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.736Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.736Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.737Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.737Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.737Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.737Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.737Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.737Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.737Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.738Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.738Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.738Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.738Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.738Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.738Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.738Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.738Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.739Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.739Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.739Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.740Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.740Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.740Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.741Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.741Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.741Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.741Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.741Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.741Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.741Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.741Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.741Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.742Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.742Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.742Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.742Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.742Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.743Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.743Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.743Z zephyr:log Attempt 1 failed with error: fetch failed
+2024-12-14T03:44:10.748Z zephyr:log Attempt 1 failed with error: fetch failed
+ℹ [03:44:10.799Z][LoggerPlugin] Bundle built with warnings { time: [33m22885[39m } 
+⚠ [03:44:10.799Z][LoggerPlugin] Warning in "../../node_modules/.pnpm/@module-federation+runtime@0.6.13/node_modules/@module-federation/runtime/dist/index.cjs.js":
+  ⚠ Critical dependency: the request of a dependency is an expression
+     ╭─[116:89]
+ 114 │                         if (!remoteEntryExports) {
+ 115 │                             Promise.resolve(/* webpackIgnore: true */ entry).then(function(p) {
+ 116 │                                 return /*#__PURE__*/ _interop_require_wildcard._(require(p));
+     ·                                                                                          ──
+ 117 │                             }).then(resolve)["catch"](reject);
+ 118 │                         } else {
+     ╰────
+ 

@@ -280,7 +280,7 @@ export default (env) => {
         name: 'MobileHost', 
         filename: 'MobileHost.container.js.bundle', 
         remotes: {
-          MobileCart: `MobileCart@http://localhost:8081/${platform}/MobileCart.container.js.bundle`,
+          MobileCart: `MobileCart@http://localhost:9000/${platform}/MobileCart.container.js.bundle`,
         },
         
       })

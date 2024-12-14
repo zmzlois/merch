@@ -1,0 +1,23 @@
+
+> MobileHost@0.0.1 start /Users/lois/Documents/GitHub/zephyr/test/zephyr-merch/apps/MobileHost
+> react-native start
+
+📦 Re.Pack 5.0.0-rc.2
+
+ r: Reload app
+ d: Open developer menu
+ j: Open debugger
+
+Press Ctrl+c or Ctrl+z to quit the dev server
+
+ℹ [01:39:07.438Z][DevServer] Server listening at http://[::1]:8081 
+ℹ [01:39:07.439Z][DevServer] Server listening at http://127.0.0.1:8081 
+ℹ [01:39:07.440Z][DevServer] Starting build for platforms: ios, android 
+ ZEPHYR   Hi lois_z_comcord_vision!
+ ZEPHYR   mobilehost.zephyr-merch.zmzlois#700
+ ZEPHYR   
+ ZEPHYR   Hi lois_z_comcord_vision!
+ ZEPHYR   mobilehost.zephyr-merch.zmzlois#701
+ ZEPHYR   
+[32mFederated types extraction completed[39m
+[32mFederated types extraction completed[39m

@@ -282,7 +282,7 @@ export default (env) => {
         filename: 'MobileCart.container.js.bundle',
         dts: false,
         exposes: {
-          './CartNavigator': './navigation/CartNavigator.tsx',
+          './CartNavigator': './navigation/CartNavigator',
         }, 
         shared: getSharedDependencies({eager: STANDALONE})
         

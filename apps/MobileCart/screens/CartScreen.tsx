@@ -4,6 +4,7 @@ import {
   ImageRequireSource,
   ScrollView,
   StyleSheet,
+  FlatList,
   Text,
   View,
 } from 'react-native';
@@ -14,9 +15,9 @@ const pics = (i: number) => {
 
 const data = Array(3)
   .fill('')
-  .map((_, i) => ({title: `Picture ${i}`, source: pics(i)}));
+  .map((_, i) => ({id: i, title: `Picture ${i}`, source: pics(i)}));
 
-const Row = ({title, source}: {title: string; source: ImageRequireSource}) => (
+const Row = ({title, source}: {title: string; source: string}) => (
   <View style={styles.row}>
     <View style={styles.titleContainer}>
       <Text style={styles.title}>{title}</Text>
@@ -24,21 +25,15 @@ const Row = ({title, source}: {title: string; source: ImageRequireSource}) => (
         The quick brown fox jumps over the lazy dog
       </Text>
     </View>
-    <Image source={source} style={styles.image} />
+    <Image source={{uri: source}} style={styles.image} />
   </View>
 );
 
 const CartScreen = () => {
   return (
-    <ScrollView style={styles.container}>
-      {data.map(({title, source}, i) => (
-        <React.Fragment key={title}>
-          <Row title={title} source={i} />
-          <Image source={{uri: source}} style={styles.image} />
-          <View style={styles.separator} />
-        </React.Fragment>
-      ))}
-    </ScrollView>
+    <View style={styles.container}>
+      <Text>CartScreen</Text>
+    </View>
   );
 };
 

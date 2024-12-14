@@ -6,7 +6,7 @@ PODS:
   - AppAuth/ExternalUserAgent (1.7.6):
     - AppAuth/Core
   - boost (1.84.0)
-  - callstack-repack (5.0.0-rc.2):
+  - callstack-repack (5.0.0-rc.3):
     - DoubleConversion
     - glog
     - hermes-engine
@@ -1976,7 +1976,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AppAuth: d4f13a8fe0baf391b2108511793e4b479691fb73
   boost: 1dca942403ed9342f98334bf4c3621f011aa7946
-  callstack-repack: 858b6803cac8672d7fdc93675111998da269c429
+  callstack-repack: 2123b3815ead4c2586f8c11e9c1160fd7435df03
   DoubleConversion: f16ae600a246532c4020132d54af21d0ddb2a385
   FBLazyVector: 7075bb12898bc3998fd60f4b7ca422496cc2cdf7
   fmt: 10c6e61f4be25dc963c36bd73fc7b1705fe975be

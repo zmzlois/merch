@@ -169,6 +169,9 @@ importers:
       '@module-federation/enhanced':
         specifier: 0.6.13
         version: 0.6.13(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.7.2)(webpack@5.97.1(@swc/core@1.5.29(@swc/helpers@0.5.13))(esbuild@0.17.19))
+      '@module-federation/sdk':
+        specifier: 0.6.13
+        version: 0.6.13
       '@react-native/babel-plugin-codegen':
         specifier: ^0.76.3
         version: 0.76.5(@babel/preset-env@7.26.0(@babel/core@7.26.0))
@@ -11872,9 +11875,7 @@ snapshots:
     transitivePeerDependencies:
       - '@babel/core'
       - '@babel/preset-env'
-      - bufferutil
       - supports-color
-      - utf-8-validate
 
   '@react-native/normalize-colors@0.76.1': {}
 

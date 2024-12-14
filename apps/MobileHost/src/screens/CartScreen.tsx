@@ -1,6 +1,7 @@
 import React from 'react';
 import {ActivityIndicator, StyleSheet, View} from 'react-native';
-
+import ErrorBoundary from '../components/ErrorBoundary';
+// @ts-expect-error DTS disabled
 const CartNavigator = React.lazy(() => import('MobileCart/CartNavigator'));
 
 const FallbackComponent = () => (
