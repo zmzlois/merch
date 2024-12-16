@@ -10,6 +10,16 @@ pnpm install
 
 2. Build cart
 
+Before running ios you must update the pods
+
+```
+pnpm pods
+```
+
+```
+
+```
+
 ```
 # Build ios
 ZC=1 pnpm --filter MobileCart run bundle:ios # build with zephyr
@@ -24,14 +34,36 @@ ZC=1 pnpm --filter MobileHost run bundle:ios # build with zephyr
 
 4. Start simulator
 
+Simulator for ios:
+
 ```
 pnpm --filter MobileHost run ios
 ```
 
-5. Run host dev server
+To run simulator on android you must reverse the ports:
 
 ```
-ZC=1 pnpm --filter MobileHost run start --platform ios
+pnpm adbreverse
+```
+
+```
+
+```
+
+Simulator for android:
+
+```
+pnpm --filter MobileHost run android
+```
+
+```
+
+```
+
+5. Run dev server
+
+```
+pnpm start
 ```
 
 ## Todo

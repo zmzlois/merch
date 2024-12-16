@@ -1,15 +1,15 @@
-import { createRequire } from 'node:module';
+import {createRequire} from 'node:module';
 import path from 'node:path';
 import rspack from '@rspack/core';
 import * as Repack from '@callstack/repack';
 import TerserPlugin from 'terser-webpack-plugin';
 import * as mobileSdk from '@zephyr-merch/mobile-sdk';
-import Dotenv from "dotenv-webpack"
-import { withZephyr } from 'zephyr-repack-plugin'
+import Dotenv from 'dotenv-webpack';
+import {withZephyr} from 'zephyr-repack-plugin';
 
 const dirname = Repack.getDirname(import.meta.url);
-const { resolve } = createRequire(import.meta.url);
-const { getSharedDependencies } = mobileSdk;
+const {resolve} = createRequire(import.meta.url);
+const {getSharedDependencies} = mobileSdk;
 const STANDALONE = Boolean(process.env.STANDALONE);
 const USE_ZEPHYR = Boolean(process.env.ZC);
 /**
@@ -27,7 +27,7 @@ const USE_ZEPHYR = Boolean(process.env.ZC);
  * @param env Environment options passed from either Webpack CLI or React Native Community CLI
  *            when running with `react-native start/bundle`.
  */
-export default (env) => {
+export default env => {
   const {
     mode = 'development',
     context = dirname,
@@ -76,7 +76,7 @@ export default (env) => {
      */
     devtool: false,
     context,
-     // If this is a miniapp, Repack runtime only compile the MF part
+    // If this is a miniapp, Repack runtime only compile the MF part
     // If this is the host only pass in the entry point
     entry: entry,
     resolve: {
@@ -110,7 +110,7 @@ export default (env) => {
       path: path.join(dirname, 'build/generated', platform),
       filename: 'index.bundle',
       chunkFilename: '[name].chunk.bundle',
-      publicPath: Repack.getPublicPath({ platform, devServer }),
+      publicPath: Repack.getPublicPath({platform, devServer}),
       uniqueName: 'zephyr-merch-host',
     },
     /**
@@ -167,8 +167,8 @@ export default (env) => {
         //   use: 'babel-loader',
         // },
 
-         /** Here you can adjust loader that will process your files. */
-         {
+        /** Here you can adjust loader that will process your files. */
+        {
           test: /\.[jt]sx?$/,
           exclude: [/node_modules/],
           type: 'javascript/auto',
@@ -194,8 +194,8 @@ export default (env) => {
             },
           },
         },
-          /** Run React Native codegen, required for utilizing new architecture */
-           Repack.REACT_NATIVE_CODEGEN_RULES,
+        /** Run React Native codegen, required for utilizing new architecture */
+        Repack.REACT_NATIVE_CODEGEN_RULES,
         /**
          * Here you can adjust loader that will process your files.
          *
@@ -216,8 +216,8 @@ export default (env) => {
             },
           },
         },
-         /** Additional rule to enable HMR for local workspace packages */
-         {
+        /** Additional rule to enable HMR for local workspace packages */
+        {
           test: /\.[jt]sx?$/,
           include: [/zephyr-merch/],
           use: 'builtin:react-refresh-loader',
@@ -272,18 +272,19 @@ export default (env) => {
           assetsPath,
         },
       }),
-       // silence missing @react-native-masked-view optionally required by @react-navigation/elements
-       new rspack.IgnorePlugin({
+      // silence missing @react-native-masked-view optionally required by @react-navigation/elements
+      new rspack.IgnorePlugin({
         resourceRegExp: /^@react-native-masked-view/,
       }),
       new Repack.plugins.ModuleFederationPluginV2({
-        name: 'MobileHost', 
-        filename: 'MobileHost.container.js.bundle', 
+        name: 'MobileHost',
+        filename: 'MobileHost.container.js.bundle',
         remotes: {
           MobileCart: `MobileCart@http://localhost:9000/${platform}/MobileCart.container.js.bundle`,
         },
-        
-      })
+
+        shared: getSharedDependencies({eager: true}),
+      }),
     ],
   };
 
